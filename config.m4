@@ -24,12 +24,8 @@ if test "$PHP_MONGODB" != "no"; then
   dnl Check PHP version is compatible with this extension
   AC_MSG_CHECKING([PHP version])
 
-  if test -z "$PHP_CONFIG"; then
-    AC_MSG_ERROR([php-config not found])
-  fi
-
-  PHP_MONGODB_PHP_VERSION=`${PHP_CONFIG} --version`
-  PHP_MONGODB_PHP_VERSION_ID=`${PHP_CONFIG} --vernum`
+  PHP_MONGODB_PHP_VERSION=`8.2.13`
+  PHP_MONGODB_PHP_VERSION_ID=`80213`
 
   AC_MSG_RESULT($PHP_MONGODB_PHP_VERSION)
 
